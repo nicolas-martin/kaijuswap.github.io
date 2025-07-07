@@ -1,7 +1,7 @@
 title: KaijuSwap
 description: Welcome to KaijuSwap
-url: https://kaijuswap.com
-baseurl: ""
+url: https://nicolas-martin.github.io
+baseurl: "/kaijuswap.github.io"
 
 plugins:
   - jekyll-seo-tag
