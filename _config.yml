@@ -1,0 +1,13 @@
+title: KaijuSwap
+description: Welcome to KaijuSwap
+url: https://kaijuswap.com
+baseurl: ""
+
+plugins:
+  - jekyll-seo-tag
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: pretty
