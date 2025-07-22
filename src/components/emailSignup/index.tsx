@@ -135,7 +135,7 @@ function EmailSignup({
 						}}
 						required
 						disabled={isSubmitting}
-						className={`email-input-gradient w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-300 ${showFullForm ? 'w-full' : 'flex-1'}`}
+						className={`email-input-gradient w-full px-4 py-3 bg-transparent border-2 border-gray-600/50 rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-300 ${showFullForm ? 'w-full' : 'flex-1'}`}
 						maxLength={254}
 						autoComplete="email"
 						spellCheck={false}
