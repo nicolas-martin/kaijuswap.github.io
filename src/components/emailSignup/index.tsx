@@ -111,44 +111,41 @@ function EmailSignup({
 
 			<form onSubmit={handleSubmit} className="flex flex-col gap-4">
 				<div className={`${showFullForm ? 'flex flex-col gap-4' : 'flex gap-2'} relative`}>
-					<div className="relative group">
-						<input
-							type="email"
-							placeholder="Enter your email"
-							value={email}
-							onChange={(e) => {
-								// Use validator to normalize input while typing
-								const value = validator.trim(e.target.value);
-								// Only allow valid email characters while typing
-								if (value === '' || validator.isEmail(value) || value.match(/^[a-zA-Z0-9.@_-]*$/)) {
-									setEmail(value.substring(0, 254));
-								}
-							}}
-							onPaste={(e) => {
-								// Sanitize pasted content
-								e.preventDefault();
-								const pastedText = e.clipboardData.getData('text');
-								const sanitized = DOMPurify.sanitize(pastedText, {
-									ALLOWED_TAGS: [],
-									ALLOWED_ATTR: []
-								});
-								setEmail(sanitized.substring(0, 254));
-							}}
-							required
-							disabled={isSubmitting}
-							className={`w-full px-4 py-3 bg-gray-900/50 border border-purple-500/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-purple-400 focus:shadow-[0_0_15px_rgba(168,85,247,0.5)] transition-all duration-300 ${showFullForm ? 'w-full' : 'flex-1'}`}
-							maxLength={254}
-							autoComplete="email"
-							spellCheck={false}
-						/>
-						<div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-lg blur-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-300 -z-10"></div>
-					</div>
+					<input
+						type="email"
+						placeholder="Enter your email"
+						value={email}
+						onChange={(e) => {
+							// Use validator to normalize input while typing
+							const value = validator.trim(e.target.value);
+							// Only allow valid email characters while typing
+							if (value === '' || validator.isEmail(value) || value.match(/^[a-zA-Z0-9.@_-]*$/)) {
+								setEmail(value.substring(0, 254));
+							}
+						}}
+						onPaste={(e) => {
+							// Sanitize pasted content
+							e.preventDefault();
+							const pastedText = e.clipboardData.getData('text');
+							const sanitized = DOMPurify.sanitize(pastedText, {
+								ALLOWED_TAGS: [],
+								ALLOWED_ATTR: []
+							});
+							setEmail(sanitized.substring(0, 254));
+						}}
+						required
+						disabled={isSubmitting}
+						className={`email-input-gradient w-full px-4 py-3 bg-transparent border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-300 ${showFullForm ? 'w-full' : 'flex-1'}`}
+						maxLength={254}
+						autoComplete="email"
+						spellCheck={false}
+					/>
 					<button
 						type="submit"
 						disabled={isSubmitting || !email}
 						className={`relative px-6 py-3 font-semibold text-white rounded-lg transition-all duration-300 ${isSubmitting || !email
 							? 'bg-gray-700 cursor-not-allowed'
-							: 'bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] hover:scale-105 active:scale-95'
+							: 'bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 hover:shadow-[0_0_8px_rgba(168,85,247,0.3)] active:scale-95'
 							} ${showFullForm ? 'w-full' : ''}`}
 					>
 						{isSubmitting ? (

@@ -19,7 +19,7 @@ function Faq() {
         <div className="relative flex-1 flex items-center">
           <CyberpunkCircuit />
           <div className="h-full w-full flex items-center justify-center">
-            <h3 className="text-center font-bold text-3xl flex flex-col items-center mb-8 md:mb-0 md:text-left">
+            <h3 className="text-center font-bold text-3xl flex flex-col items-center mb-8 md:mb-0 md:text-left tracking-wider leading-relaxed">
               <AnimatedText text={faq.title} initial={{ y: "0%" }} />
             </h3>
           </div>
