@@ -3,7 +3,7 @@ import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-	site: 'https://nicolas-martin.github.io',
+	site: 'https://kaijuswap.com',
 	base: '/',
 	vite: {
 		css: {
