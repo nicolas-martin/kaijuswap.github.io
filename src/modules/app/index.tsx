@@ -21,7 +21,7 @@ function AppRedirectionPage({ config }: Props) {
 			</div>
 
 			<EmailSignup
-				title="Join the Waiting List"
+				title="Join the Waitlist"
 				subtitle="Be among the first to access the most advanced Solana meme coin trading platform"
 				buttonText="Join Waitlist"
 				showFullForm={true}

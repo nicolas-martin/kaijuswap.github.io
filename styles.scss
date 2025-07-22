@@ -24,3 +24,24 @@ html {
     ),
     linear-gradient(to right, rgba(200, 200, 200, 0.03) 1px, transparent 1px);
 }
+
+/* Cyberpunk CTA Wrapper Styles */
+.cyberpunk-cta-wrapper {
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(45deg, #a855f7, #ec4899, #fb923c);
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    filter: blur(10px);
+    z-index: -1;
+  }
+  
+  &:hover::before {
+    opacity: 0.5;
+  }
+}
