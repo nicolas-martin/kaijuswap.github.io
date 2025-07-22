@@ -51,30 +51,18 @@ function Header() {
 											.split(" ")
 											.slice(0, header.headlineMark[0])
 											.join(" ")}{" "}
-										<motion.span 
-											className="inline-block relative"
-											animate={{
-												textShadow: [
-													"0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff",
-													"0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff",
-													"0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff"
-												]
-											}}
-											transition={{
-												duration: 6,
-												repeat: Infinity,
-												ease: "easeInOut"
-											}}
+										<span 
+											className="inline-block relative bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent"
 											style={{
-												color: "#ffffff",
-												textShadow: "0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff"
+												WebkitBackgroundClip: "text",
+												WebkitTextFillColor: "transparent"
 											}}
 										>
 											{header.headline
 												.split(" ")
 												.slice(...header.headlineMark)
 												.join(" ")}
-										</motion.span>{" "}
+										</span>{" "}
 										{header.headline
 											.split(" ")
 											.slice(header.headlineMark[1])

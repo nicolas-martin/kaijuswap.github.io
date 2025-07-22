@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { ConfigContext } from "../../utils/configContext";
-import CyberpunkSpill from "./svgs/cyberpunkSpill";
 import IphoneFrame from "../../components/iphoneFrame";
 import EmailSignup from "../emailSignup";
 import { motion } from "framer-motion";
@@ -36,34 +35,16 @@ function AppBanner() {
 					duration: 0.2,
 				}}
 			>
-				<div className="p-4 bg-gradient-to-br from-[#0A0F24] to-[#112240] text-white rounded-t-[var(--rounded-box)] flex flex-col items-center md:flex-row relative overflow-hidden">
-					{/* Tech grid background pattern */}
-					<div className="absolute inset-0 opacity-10">
-						<div className="absolute inset-0" style={{
-							backgroundImage: `repeating-linear-gradient(
-								0deg,
-								#00E5FF 0px,
-								transparent 1px,
-								transparent 20px,
-								#00E5FF 21px
-							),
-							repeating-linear-gradient(
-								90deg,
-								#00E5FF 0px,
-								transparent 1px,
-								transparent 20px,
-								#00E5FF 21px
-							)`
-						}} />
-					</div>
+				<div className="p-4 text-white flex flex-col items-center md:flex-row relative overflow-hidden">
 					<div className="flex-1 flex flex-col items-center justify-center min-h-full">
 						<motion.h2
 							initial={{ opacity: 0, y: "-100%" }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.3 }}
-							className="mt-0 mb-4 text-4xl md:text-6xl relative"
+							className="mt-0 mb-4 text-4xl md:text-6xl relative bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent"
 							style={{
-								textShadow: "0 0 20px #00E5FF, 0 0 40px #00E5FF"
+								WebkitBackgroundClip: "text",
+								WebkitTextFillColor: "transparent"
 							}}
 						>
 							{appBanner.title}
@@ -129,7 +110,6 @@ function AppBanner() {
 						))}
 					</motion.div>
 				</div>
-				<CyberpunkSpill className="-translate-y-1" />
 			</motion.div>
 		</motion.section>
 	);
