@@ -4,6 +4,7 @@ import IphoneFrame from "../../components/iphoneFrame";
 import EmailSignup from "../emailSignup";
 import { motion } from "framer-motion";
 import clsx from "clsx";
+import CircuitDivider from "./svgs/circuitDivider";
 
 function AppBanner() {
 	const { googlePlayLink, appStoreLink, appBanner } =
@@ -110,6 +111,17 @@ function AppBanner() {
 						))}
 					</motion.div>
 				</div>
+			</motion.div>
+			
+			{/* Circuit separator */}
+			<motion.div
+				initial={{ opacity: 0, y: 20 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true }}
+				transition={{ duration: 1, delay: 0.5 }}
+				className="relative mt-16 mb-8"
+			>
+				<CircuitDivider className="w-full h-24 opacity-70" />
 			</motion.div>
 		</motion.section>
 	);

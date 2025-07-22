@@ -9,23 +9,50 @@
   .cyberpunk-cta-wrapper {
     @apply relative;
   }
-  .cyberpunk-cta-wrapper::before {
-    content: "";
-    @apply
-      absolute
-      inset-[-2px]
-      rounded-lg
-      opacity-0
-      transition-opacity
-      duration-300
-      ease-in-out      /* ← use a valid Tailwind timing function */
-      filter
-      blur-sm
-      -z-10;
-    background: linear-gradient(45deg, #a855f7, #ec4899, #fb923c);
+  
+  .email-input-gradient {
+    position: relative;
+    background-clip: padding-box;
   }
-  .cyberpunk-cta-wrapper:hover::before {
-    @apply opacity-50;
+  
+  .email-input-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -1px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #a855f7, #ec4899, #fb923c, #a855f7);
+    background-size: 300% 300%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .email-input-gradient:hover::before,
+  .email-input-gradient:focus::before {
+    opacity: 1;
+    animation: gradient-shift 3s ease infinite;
+  }
+  
+  .email-input-gradient:hover,
+  .email-input-gradient:focus {
+    border-color: transparent;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.4), 0 0 20px rgba(255, 45, 149, 0.2);
+  }
+  
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
 
