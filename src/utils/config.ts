@@ -3,7 +3,7 @@ import type { TemplateConfig } from "./configType";
 const templateConfig: TemplateConfig = {
 	name: "Kaiju Swap",
 	seo: {
-		title: "KAIJU - Enter the Future",
+		title: "Kaiju Swap",
 		description: "Enter the neon-soaked future where technology meets possibility",
 	},
 	// Draws grid behind main container
@@ -137,29 +137,24 @@ const templateConfig: TemplateConfig = {
 			title: "Frequently Asked Questions",
 			qa: [
 				{
-					question: "How much does it cost to trade on Kaiju Swap?",
+					question: "How easy is it to start trading meme coins on your app?",
 					answer:
-						"You see the full fee before you confirm: Jupiter routing is usually 0.1–0.25%, Solana network is ~0.000005 SOL, first-time ATA setup is ~0.002 SOL, plus a small platform fee, so most trades end up under $1."
+						"Getting started is incredibly simple - just connect your Solana wallet and you can immediately discover trending meme coins with real-time price data. The app handles all the complex DEX routing through Jupiter automatically, so you only need to specify the amount you want to trade."
 				},
 				{
-					question: "Is my wallet and money safe on Kaiju Swap?",
+					question: "How secure is my wallet and trading data in the app?",
 					answer:
-						"Your keys stay on your phone (React Native Keychain), every transaction is signed locally, we never custody funds, Firebase App Check blocks abuse, and you keep your 12‑word seed."
+						"Your private keys are stored securely in your device's keychain and never leave your phone, while all API calls are protected by Firebase App Check authentication. The app uses industry-standard gRPC encryption for all data transmission and implements comprehensive input validation to prevent malicious attacks."
 				},
 				{
-					question: "What tokens can I trade and how do I find new meme coins?",
+					question: "Will I get stuck with high fees or failed transactions?",
 					answer:
-						"You can trade any Solana token—SOL/wSOL, SPL tokens, meme coins, even XStocks—and discover them through the Home tab (trending, new, top gainers) or the Explore search with real‑time Birdeye data."
+						"The app calculates all fees upfront including network costs and shows you the exact amount before any trade, with intelligent routing through Jupiter to find the best prices. Our robust error handling and retry mechanisms ensure trades complete successfully, and we've specifically solved common Solana swap issues like native SOL handling."
 				},
 				{
-					question: "How do I track my profits and losses?",
+					question: "How do I know I'm getting accurate price information and market data?",
 					answer:
-						"The Portfolio tab shows live balances, USD value, per‑token P&L, cost basis, full trade history, and allocation so you always know how you're doing."
-				},
-				{
-					question: "How do I get started and what do I need to begin trading?",
-					answer:
-						"Create or import a wallet, back up your seed, add about 0.01 SOL, pick a token, review the quote and fees, confirm the trade, and then track everything in Portfolio; you just need an iOS or Android device and a bit of SOL for fees."
+						"All price data comes directly from Birdeye's professional market data feeds with real-time updates and comprehensive price history charts. The app uses multi-layer caching to ensure you always see the most current prices while maintaining fast performance even during high market volatility."
 				}
 			]
 		},
