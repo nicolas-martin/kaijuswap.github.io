@@ -2,8 +2,8 @@ import { motion, useScroll } from "framer-motion";
 import { useContext, useRef } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
 import SingleScreenshot from "./singleScreenshot";
-import SVGWave from "./svg/wave";
-import SVGBlob from "./svg/blob";
+import CyberpunkWave from "./svg/cyberpunkWave";
+import CyberpunkOrb from "./svg/cyberpunkOrb";
 import EmailSignup from "../../../../components/emailSignup";
 
 function Header() {
@@ -131,7 +131,7 @@ function Header() {
 					</div>
 					<div className="min-h-[300vh] z-[-1]" ref={ref}>
 						<div className="flex justify-center sticky top-28 md:top-40">
-							<SVGBlob
+							<CyberpunkOrb
 								scrollYProgress={scrollYProgress}
 								className="-z-10 absolute hidden w-[800px] -top-20 -right-60 md:hidden xl:block"
 							/>
@@ -169,7 +169,7 @@ function Header() {
 				</div>
 			</div>
 			{partners && (
-				<SVGWave className="absolute -bottom-1 left-0 right-0 -z-10" />
+				<CyberpunkWave className="absolute -bottom-1 left-0 right-0 -z-10" />
 			)}
 		</section>
 	);
