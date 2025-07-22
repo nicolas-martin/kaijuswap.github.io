@@ -139,29 +139,29 @@ const templateConfig: TemplateConfig = {
 				{
 					question: "How much does it cost to trade on Kaiju Swap?",
 					answer:
-						"On Kaiju Swap you see total fees before you confirm:\n\n• Trading Fees: Jupiter DEX routing (0.1–0.25%)\n• Network Fees: ~0.000005 SOL (< $0.01)\n• Account Setup: 0.00203928 SOL (~$0.50–1)\n• Platform Fee: small dev support\n\nMost trades cost under $1. Total displays in SOL up front.",
+						"You see the full fee before you confirm: Jupiter routing is usually 0.1–0.25%, Solana network is ~0.000005 SOL, first-time ATA setup is ~0.002 SOL, plus a small platform fee, so most trades end up under $1."
 				},
 				{
 					question: "Is my wallet and money safe on Kaiju Swap?",
 					answer:
-						"Kaiju Swap keeps your funds on your device:\n\n• Private keys stored locally (React Native Keychain)\n• All transactions signed on your device\n• Firebase App Check blocks bots\n• You control your 12‑word seed\n• No custody: you hold your SOL\n• Scam filter on token names\n\nYou stay in control at all times.",
+						"Your keys stay on your phone (React Native Keychain), every transaction is signed locally, we never custody funds, Firebase App Check blocks abuse, and you keep your 12‑word seed."
 				},
 				{
 					question: "What tokens can I trade and how do I find new meme coins?",
 					answer:
-						"Kaiju Swap supports all Solana tokens:\n\n• SOL & wSOL\n• SPL tokens\n• Meme coins & community tokens\n• XStocks (tokenized stocks)\n\nDiscover coins:\n• Home: trending, new listings, top gainers\n• Explore: search by name, symbol, address\n• Real‑time data via Birdeye\n• Early access to new tokens\n• Momentum filter spots rising coins",
+						"You can trade any Solana token—SOL/wSOL, SPL tokens, meme coins, even XStocks—and discover them through the Home tab (trending, new, top gainers) or the Explore search with real‑time Birdeye data."
 				},
 				{
 					question: "How do I track my profits and losses?",
 					answer:
-						"Kaiju Swap’s Portfolio tab shows:\n\nPortfolio Overview:\n• Live balances & USD value\n• P&L per token\n• Cost basis tracking\n\nDetailed Analytics:\n• Unrealized gains/losses\n• % returns\n• Full trade history\n• Holdings breakdown\n\nYou get a clear view of your performance.",
+						"The Portfolio tab shows live balances, USD value, per‑token P&L, cost basis, full trade history, and allocation so you always know how you're doing."
 				},
 				{
 					question: "How do I get started and what do I need to begin trading?",
 					answer:
-						"To start on Kaiju Swap:\n\n1. Create or import wallet and back up your seed\n2. Fund it (min ~0.01 SOL)\n3. Find a token via Home/Explore\n4. Check quote, fees, slippage\n5. Confirm trade\n6. Track in Portfolio\n\nRequirements:\n• iOS or Android device\n• SOL for trades and fees\n• Only trade with what you can afford to lose",
-				},
-			],
+						"Create or import a wallet, back up your seed, add about 0.01 SOL, pick a token, review the quote and fees, confirm the trade, and then track everything in Portfolio; you just need an iOS or Android device and a bit of SOL for fees."
+				}
+			]
 		},
 		header: {
 			headline: "Kaiju Swap Enter the neon-soaked future where technology meets possibility",
