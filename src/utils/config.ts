@@ -139,27 +139,27 @@ const templateConfig: TemplateConfig = {
 				{
 					question: "How much does it cost to trade on Kaiju Swap?",
 					answer:
-						"Trading on Kaiju Swap involves several fee components that are calculated transparently before each trade:\n\n• Trading Fees: Jupiter DEX routing fees (typically 0.1-0.25% depending on the trading route)\n• Network Fees: Solana transaction fees (~0.000005 SOL, which is less than $0.01)\n• Account Creation Fees: If you're trading a token for the first time, you'll need to create an Associated Token Account (~0.00203928 SOL, about $0.50-$1 depending on SOL price)\n• Platform Fees: Minimal platform fees to support app development\n\nThe app shows you the exact total cost in SOL before confirming any trade, so there are no surprises. Most trades cost under $1 in total fees, making it very affordable for meme coin trading.",
+						"On Kaiju Swap you see total fees before you confirm:\n\n• Trading Fees: Jupiter DEX routing (0.1–0.25%)\n• Network Fees: ~0.000005 SOL (< $0.01)\n• Account Setup: 0.00203928 SOL (~$0.50–1)\n• Platform Fee: small dev support\n\nMost trades cost under $1. Total displays in SOL up front.",
 				},
 				{
 					question: "Is my wallet and money safe on Kaiju Swap?",
 					answer:
-						"Yes, Kaiju Swap implements institutional-grade security measures:\n\n• Your keys, your coins: Your private keys are stored securely on your device using React Native Keychain, never on our servers\n• Local transaction signing: All transactions are signed locally on your device\n• Firebase App Check: Protects against API abuse and bot attacks\n• Mnemonic phrase backup: You control your 12-word recovery phrase and can restore your wallet anytime\n• Multi-language content filtering: Protects against scam tokens with inappropriate names\n• No custody: Kaiju Swap never holds your funds - you maintain full control of your Solana wallet\n\nThe app is built on Solana's secure blockchain infrastructure and follows best practices for mobile crypto applications.",
+						"Kaiju Swap keeps your funds on your device:\n\n• Private keys stored locally (React Native Keychain)\n• All transactions signed on your device\n• Firebase App Check blocks bots\n• You control your 12‑word seed\n• No custody: you hold your SOL\n• Scam filter on token names\n\nYou stay in control at all times.",
 				},
 				{
 					question: "What tokens can I trade and how do I find new meme coins?",
 					answer:
-						"Kaiju Swap supports all Solana-based tokens including:\n\n• Native SOL and Wrapped SOL (wSOL)\n• SPL Tokens (all standard Solana tokens)\n• Meme coins and community tokens\n• XStocks (tokenized stocks)\n\nFinding new opportunities:\n• Home tab: Shows trending coins, new listings, and top gainers with 4-hour price charts\n• Explore tab: Search any token by name, symbol, or contract address\n• Real-time data: Powered by Birdeye API for accurate pricing and market data\n• New listings: Early access to recently launched tokens\n• Trending algorithms: Identifies coins gaining momentum\n\nThe app helps you discover opportunities while providing comprehensive market data to make informed decisions.",
+						"Kaiju Swap supports all Solana tokens:\n\n• SOL & wSOL\n• SPL tokens\n• Meme coins & community tokens\n• XStocks (tokenized stocks)\n\nDiscover coins:\n• Home: trending, new listings, top gainers\n• Explore: search by name, symbol, address\n• Real‑time data via Birdeye\n• Early access to new tokens\n• Momentum filter spots rising coins",
 				},
 				{
 					question: "How do I track my profits and losses?",
 					answer:
-						"Kaiju Swap provides comprehensive portfolio tracking:\n\nPortfolio Overview:\n• Real-time balances: Live updates of all your token holdings\n• Total portfolio value: Your complete portfolio worth in USD\n• Individual token P&L: Profit/loss for each token you hold\n• Cost basis tracking: Remembers your purchase prices for accurate calculations\n\nDetailed Analytics:\n• Unrealized gains/losses: Current value vs. what you paid\n• Percentage performance: See your returns as percentages\n• Transaction history: Complete record of all your trades\n• Portfolio composition: Understand your holdings distribution\n\nThe Portfolio tab gives you a complete picture of your trading performance, helping you make better decisions about when to take profits or cut losses.",
+						"Kaiju Swap’s Portfolio tab shows:\n\nPortfolio Overview:\n• Live balances & USD value\n• P&L per token\n• Cost basis tracking\n\nDetailed Analytics:\n• Unrealized gains/losses\n• % returns\n• Full trade history\n• Holdings breakdown\n\nYou get a clear view of your performance.",
 				},
 				{
 					question: "How do I get started and what do I need to begin trading?",
 					answer:
-						"Getting started is straightforward:\n\nInitial Setup:\n1. Create or import wallet: Generate a new wallet with secure mnemonic phrase, or import existing Solana wallet\n2. Fund your wallet: Send SOL to your Kaiju Swap wallet address (you'll need SOL for trading and fees)\n3. Secure your backup: Write down your 12-word mnemonic phrase and store it safely\n\nYour First Trade:\n1. Find a token: Use Home or Explore tabs to discover coins\n2. Check the quote: See real-time prices, fees, and slippage\n3. Choose amount: Use percentage buttons (25%, 50%, 75%, 100%) or enter custom amounts\n4. Review and confirm: Check all details before submitting\n5. Track in Portfolio: Monitor your holdings and performance\n\nWhat You Need:\n• Minimum SOL balance: At least ~0.01 SOL for fees and account creation\n• Mobile device: iOS or Android with the Kaiju Swap app\n• Basic understanding: Meme coin trading involves high risk - only invest what you can afford to lose\n\nThe app guides you through each step with helpful tooltips and clear confirmation screens.",
+						"To start on Kaiju Swap:\n\n1. Create or import wallet and back up your seed\n2. Fund it (min ~0.01 SOL)\n3. Find a token via Home/Explore\n4. Check quote, fees, slippage\n5. Confirm trade\n6. Track in Portfolio\n\nRequirements:\n• iOS or Android device\n• SOL for trades and fees\n• Only trade with what you can afford to lose",
 				},
 			],
 		},

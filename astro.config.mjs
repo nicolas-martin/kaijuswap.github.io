@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://nicolas-martin.github.io',
-	base: '/kaiju-landing',
+	base: '/',
 	vite: {
 		css: {
 			preprocessorOptions: {
