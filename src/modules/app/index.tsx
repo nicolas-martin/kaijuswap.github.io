@@ -23,7 +23,7 @@ function AppRedirectionPage({ config }: Props) {
 			<EmailSignup
 				title="Join the Waiting List"
 				subtitle="Be among the first to access the most advanced Solana meme coin trading platform"
-				buttonText="Join Waiting List"
+				buttonText="Join Waitlist"
 				showFullForm={true}
 			/>
 

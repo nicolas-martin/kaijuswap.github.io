@@ -33,7 +33,7 @@ const templateConfig: TemplateConfig = {
 		],
 	},
 	topNavbar: {
-		cta: "Join Waiting List",
+		cta: "Join Waitlist",
 		disableWidthAnimation: false,
 		hideAppStore: true,
 		hideGooglePlay: true,
@@ -45,7 +45,7 @@ const templateConfig: TemplateConfig = {
 	},
 	appBanner: {
 		id: "app-banner",
-		title: "Join the Waiting List!",
+		title: "Join the waitlist!",
 		subtitle:
 			"Be among the first to access Kaiju Swap - the most advanced Solana meme coin trading platform. Get early access and exclusive benefits.",
 		screenshots: [

@@ -84,7 +84,7 @@ function AppBanner() {
 						>
 							<div className="cyberpunk-cta-wrapper">
 								<EmailSignup
-									buttonText="Join Waiting List"
+									buttonText="Join Waitlist"
 									showFullForm={false}
 								/>
 							</div>
