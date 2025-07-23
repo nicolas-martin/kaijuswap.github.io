@@ -68,9 +68,13 @@ function EmailSignup({
 		}
 
 		try {
-			const GOOGLE_SCRIPT_URL = 'import.meta.env.PUBLIC_SCRIPT_URL';
+			const SCRIPT_URL = import.meta.env.PUBLIC_SCRIPT_URL;
+			
+			if (!SCRIPT_URL) {
+				throw new Error('Script URL not configured');
+			}
 
-			await fetch(GOOGLE_SCRIPT_URL, {
+			await fetch(SCRIPT_URL, {
 				method: 'POST',
 				mode: 'no-cors',
 				headers: {
