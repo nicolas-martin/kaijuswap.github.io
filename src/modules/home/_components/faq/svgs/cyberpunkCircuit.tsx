@@ -4,7 +4,7 @@ function CyberpunkCircuit() {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 0.9 }}
+      whileInView={{ opacity: 0.3 }}
       transition={{ duration: 1 }}
       viewport={{ once: true, amount: 0.4 }}
       className="absolute -z-10 left-0 -top-4 h-full w-full overflow-hidden md:top-0"
@@ -20,9 +20,9 @@ function CyberpunkCircuit() {
         <defs>
           {/* Enhanced gradient with better visibility */}
           <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="cyber-grad">
-            <stop stopColor="#00E5FF" stopOpacity="0.8" offset="0%" />
-            <stop stopColor="#FF2D95" stopOpacity="0.8" offset="50%" />
-            <stop stopColor="#FF6F61" stopOpacity="0.8" offset="100%" />
+            <stop stopColor="#00E5FF" stopOpacity="0.3" offset="0%" />
+            <stop stopColor="#FF2D95" stopOpacity="0.3" offset="50%" />
+            <stop stopColor="#FF6F61" stopOpacity="0.3" offset="100%" />
           </linearGradient>
           
           {/* Enhanced glow for better visibility */}
@@ -36,8 +36,8 @@ function CyberpunkCircuit() {
 
           {/* Background fill gradient */}
           <radialGradient cx="50%" cy="50%" r="50%" id="bg-grad">
-            <stop stopColor="#00E5FF" stopOpacity="0.1" offset="0%" />
-            <stop stopColor="#FF2D95" stopOpacity="0.05" offset="50%" />
+            <stop stopColor="#00E5FF" stopOpacity="0.05" offset="0%" />
+            <stop stopColor="#FF2D95" stopOpacity="0.02" offset="50%" />
             <stop stopColor="transparent" offset="100%" />
           </radialGradient>
         </defs>
@@ -61,7 +61,7 @@ function CyberpunkCircuit() {
             filter="url(#cyber-glow)"
             animate={{ 
               rotate: [0, 360],
-              opacity: [0.6, 1, 0.6]
+              opacity: [0.3, 0.5, 0.3]
             }}
             transition={{ 
               rotate: { duration: 30, repeat: Infinity, ease: "linear" },
@@ -76,7 +76,7 @@ function CyberpunkCircuit() {
             stroke="url(#cyber-grad)"
             strokeWidth="2"
             filter="url(#cyber-glow)"
-            opacity="0.8"
+            opacity="0.4"
             animate={{ 
               rotate: [0, -360]
             }}
@@ -91,7 +91,7 @@ function CyberpunkCircuit() {
             fill="none"
             stroke="#00E5FF"
             strokeWidth="2"
-            opacity="0.6"
+            opacity="0.3"
             filter="url(#cyber-glow)"
           />
           
@@ -103,7 +103,7 @@ function CyberpunkCircuit() {
             fill="#00E5FF"
             filter="url(#cyber-glow)"
             animate={{
-              opacity: [0.5, 1, 0.5],
+              opacity: [0.2, 0.4, 0.2],
               r: [4, 8, 4]
             }}
             transition={{
@@ -119,7 +119,7 @@ function CyberpunkCircuit() {
             fill="#FF2D95"
             filter="url(#cyber-glow)"
             animate={{
-              opacity: [0.5, 1, 0.5],
+              opacity: [0.2, 0.4, 0.2],
               r: [3, 7, 3]
             }}
             transition={{
@@ -136,7 +136,7 @@ function CyberpunkCircuit() {
             fill="#FF6F61"
             filter="url(#cyber-glow)"
             animate={{
-              opacity: [0.5, 1, 0.5],
+              opacity: [0.2, 0.4, 0.2],
               r: [3, 7, 3]
             }}
             transition={{
@@ -153,7 +153,7 @@ function CyberpunkCircuit() {
             fill="#00E5FF"
             filter="url(#cyber-glow)"
             animate={{
-              opacity: [0.5, 1, 0.5],
+              opacity: [0.2, 0.4, 0.2],
               r: [4, 8, 4]
             }}
             transition={{
@@ -170,7 +170,7 @@ function CyberpunkCircuit() {
             fill="#FF2D95"
             filter="url(#cyber-glow)"
             animate={{
-              opacity: [0.5, 1, 0.5],
+              opacity: [0.2, 0.4, 0.2],
               r: [3, 7, 3]
             }}
             transition={{
@@ -187,7 +187,7 @@ function CyberpunkCircuit() {
             fill="#FF6F61"
             filter="url(#cyber-glow)"
             animate={{
-              opacity: [0.5, 1, 0.5],
+              opacity: [0.2, 0.4, 0.2],
               r: [3, 7, 3]
             }}
             transition={{
@@ -206,7 +206,7 @@ function CyberpunkCircuit() {
             fill="#FF2D95"
             filter="url(#cyber-glow)"
             animate={{
-              opacity: [0.7, 1, 0.7],
+              opacity: [0.3, 0.5, 0.3],
               r: [6, 10, 6]
             }}
             transition={{
