@@ -14,6 +14,13 @@ function CyberpunkWave({ className }: Props) {
       preserveAspectRatio="none"
     >
       <defs>
+        {/* Bottom gradient that transitions to page background */}
+        <linearGradient id="bottomFadeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#0A0F24" stopOpacity="0" />
+          <stop offset="70%" stopColor="#0A0F24" stopOpacity="0.5" />
+          <stop offset="100%" stopColor="#0A0F24" stopOpacity="1" />
+        </linearGradient>
+        
         {/* Gradient definitions */}
         <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stopColor="#0A0F24" />
@@ -148,6 +155,9 @@ function CyberpunkWave({ className }: Props) {
         <line x1="0" y1="220" x2="1440" y2="220" stroke="#FF2D95" strokeWidth="0.5" strokeDasharray="5 10"/>
         <line x1="0" y1="240" x2="1440" y2="240" stroke="#FF6F61" strokeWidth="0.5" strokeDasharray="15 5"/>
       </g>
+      
+      {/* Bottom gradient fade */}
+      <rect x="0" y="0" width="1440" height="320" fill="url(#bottomFadeGradient)" />
     </svg>
   );
 }
