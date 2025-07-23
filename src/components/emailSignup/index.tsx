@@ -101,7 +101,7 @@ function EmailSignup({
 	}
 
 	return (
-		<div className={`${showFullForm ? 'max-w-md mx-auto p-8 bg-gradient-to-br from-purple-900/20 via-pink-900/20 to-orange-900/20 rounded-lg border border-purple-500/30 backdrop-blur-sm' : ''}`}>
+		<div className={`relative z-50 ${showFullForm ? 'max-w-md mx-auto p-8 bg-gradient-to-br from-purple-900/20 via-pink-900/20 to-orange-900/20 rounded-lg border border-purple-500/30 backdrop-blur-sm' : ''}`}>
 			{showFullForm && (
 				<div className="text-center mb-6">
 					<h2 className="text-3xl font-bold mb-2 bg-gradient-to-br from-purple-400 via-pink-400 to-orange-300 bg-clip-text text-transparent">{title}</h2>
@@ -110,7 +110,7 @@ function EmailSignup({
 			)}
 
 			<form onSubmit={handleSubmit} className="flex flex-col gap-4">
-				<div className={`${showFullForm ? 'flex flex-col gap-4' : 'flex gap-2'} relative`}>
+				<div className={`${showFullForm ? 'flex flex-col gap-4' : 'flex gap-2'} relative z-50`}>
 					<input
 						type="email"
 						placeholder="Enter your email"
@@ -135,7 +135,7 @@ function EmailSignup({
 						}}
 						required
 						disabled={isSubmitting}
-						className={`email-input-gradient w-full px-4 py-3 bg-transparent border-2 border-gray-600/50 rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-300 ${showFullForm ? 'w-full' : 'flex-1'}`}
+						className={`email-input-gradient w-full px-4 py-3 bg-base-100 border-2 border-gray-600/50 rounded-lg text-white placeholder-gray-500 focus:outline-none transition-all duration-300 relative z-50 ${showFullForm ? 'w-full' : 'flex-1'}`}
 						maxLength={254}
 						autoComplete="email"
 						spellCheck={false}
@@ -143,7 +143,7 @@ function EmailSignup({
 					<button
 						type="submit"
 						disabled={isSubmitting || !email}
-						className={`relative px-6 py-3 font-semibold text-white rounded-lg transition-all duration-300 ${isSubmitting || !email
+						className={`relative z-50 px-6 py-3 font-semibold text-white rounded-lg transition-all duration-300 ${isSubmitting || !email
 							? 'bg-gray-700 cursor-not-allowed'
 							: 'bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 hover:shadow-[0_0_8px_rgba(168,85,247,0.3)] active:scale-95'
 							} ${showFullForm ? 'w-full' : ''}`}
@@ -162,7 +162,7 @@ function EmailSignup({
 			</form>
 
 			{!showFullForm && (
-				<p className="text-xs text-gray-500 mt-3 text-center">
+				<p className="text-xs text-gray-500 mt-3 text-center relative z-50">
 					Get early access and exclusive benefits
 				</p>
 			)}

@@ -51,7 +51,7 @@ function Header() {
 											.split(" ")
 											.slice(0, header.headlineMark[0])
 											.join(" ")}{" "}
-										<span 
+										<span
 											className="inline-block relative bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent"
 											style={{
 												WebkitBackgroundClip: "text",
