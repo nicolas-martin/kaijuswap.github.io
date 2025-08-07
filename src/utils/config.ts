@@ -30,6 +30,7 @@ const templateConfig: TemplateConfig = {
 			{ href: "/#features", title: "Features" },
 			{ href: "/#how-it-works", title: "How it works" },
 			{ href: "/#faq", title: "FAQ" },
+			{ href: "/support", title: "Support" },
 		],
 	},
 	topNavbar: {
@@ -41,6 +42,7 @@ const templateConfig: TemplateConfig = {
 			{ href: "/#features", title: "Features" },
 			{ href: "/#how-it-works", title: "How it works" },
 			{ href: "/#faq", title: "FAQ" },
+			{ href: "/support", title: "Support" },
 		],
 	},
 	appBanner: {
@@ -313,6 +315,12 @@ Kaiju Swap
 support@kaijuswap.com  
 https://kaijuswap.com/contact
 `,
+	},
+	support: {
+		seo: {
+			title: "Support Center - Kaiju Swap",
+			description: "Get help with Kaiju Swap - FAQ, contact support, and community resources",
+		},
 	},
 	termsAndConditions: {
 		seo: {

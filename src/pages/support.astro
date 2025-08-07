@@ -1,0 +1,9 @@
+---
+import SupportPage from "@modules/support"
+import Layout from "Layout.astro"
+import defaultTemplateConfig from "utils/config"
+---
+
+<Layout {...defaultTemplateConfig}>
+  <SupportPage client:load config={defaultTemplateConfig} />
+</Layout>
