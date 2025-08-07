@@ -13,12 +13,16 @@ interface Props {
 
 function SupportPage({ config }: Props) {
 	const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
+	
+	// Form state - commented out since we're using direct email
+	/*
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
 		subject: "",
 		message: "",
 	});
+	*/
 
 	const faqs = [
 		{
@@ -63,6 +67,8 @@ function SupportPage({ config }: Props) {
 		},
 	];
 
+	// Form handling - commented out since we're using direct email
+	/*
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [submitStatus, setSubmitStatus] = useState<{
 		type: 'success' | 'error' | null;
@@ -251,6 +257,7 @@ function SupportPage({ config }: Props) {
 			setSubmitStatus({ type: null, message: '' });
 		}
 	};
+	*/
 
 	return (
 		<ConfigContext.Provider value={config}>
@@ -346,6 +353,7 @@ function SupportPage({ config }: Props) {
 						</div>
 					</div>
 
+					{/* Contact Form - Commented out for now, using direct email instead
 					<div className="mb-16">
 						<h2 className="text-3xl font-bold mb-8 text-center">Contact Support</h2>
 						<div className="max-w-2xl mx-auto">
@@ -486,11 +494,15 @@ function SupportPage({ config }: Props) {
 							</form>
 						</div>
 					</div>
+					*/}
 
 					<div className="text-center bg-[#1a1a2e]/50 border border-[#00E5FF]/30 rounded-lg backdrop-blur-sm p-8">
-						<h3 className="text-2xl font-bold mb-4">Need Immediate Help?</h3>
+						<h3 className="text-2xl font-bold mb-4">Contact Support</h3>
+						<p className="text-gray-400 mb-2">
+							Have a question or need help? Reach out to our support team directly.
+						</p>
 						<p className="text-gray-400 mb-6">
-							For urgent issues affecting your trading or account access, please email us directly.
+							We typically respond within 24 hours.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<a
@@ -500,7 +512,7 @@ function SupportPage({ config }: Props) {
 								<svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 								</svg>
-								Email Support
+								support@kaijuswap.com
 							</a>
 							<a
 								href="https://x.com/kaijuswap"
